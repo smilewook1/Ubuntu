@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int myglobal;
+int myglobal; //dd
 
 void* thread_function(void* arg)
 {
