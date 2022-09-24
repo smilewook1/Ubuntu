@@ -14,7 +14,7 @@ void* thread_function(void* arg)
         j = j + 1;
         printf(".");
         fflush(stdout);
-        sleep(2);
+        sleep(1);
         myglobal = j;
     }
     return NULL;
@@ -35,7 +35,7 @@ int main(void)
         myglobal = myglobal + 1;
         printf("o");
         fflush(stdout);
-        sleep(1);
+        sleep(2);
     }
 
     if (pthread_join(mythread, NULL))
